@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chetan.commonapp.MainActivity">
+    <Button
+        android:id="@+id/createdb"
+        android:text="Create DB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="createDB"
+        />
+    <LinearLayout
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_below="@+id/createdb"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edityyyy"
+            android:enabled="false"
+            android:hint="YYYY"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editmm"
+            android:enabled="false"
+            android:hint="MM"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editdd"
+            android:enabled="false"
+            android:hint="DD"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/editworkingdays"
+            android:enabled="false"
+            android:hint="Number of working days"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="queryDB"
+            android:enabled="false"
+            android:id="@+id/qryDB"
+            android:text="Query DB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>
